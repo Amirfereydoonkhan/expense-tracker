@@ -5,19 +5,19 @@ export const AddTransaction = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
 
-  const {addTransaction} = useContext(GlobalContext);
+  const { addTransaction } = useContext(GlobalContext);
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
 
     const newTransaction = {
       id: Math.floor(Math.random() * 10000000),
       text,
-      amount : +amount
-    }
+      amount: +amount,
+    };
 
     addTransaction(newTransaction);
-  }
+  };
 
   return (
     <>
@@ -36,7 +36,7 @@ export const AddTransaction = () => {
         <div className="form-control">
           <label htmlFor="amount">
             Amount <br />
-            (negative - expense, positive - income)
+            (negative - expense) (positive + income)
           </label>
           <input
             type="number"
