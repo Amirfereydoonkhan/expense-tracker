@@ -5,7 +5,7 @@ income and expenses, calculate balances in real time, and persist data
 across sessions using the browser's LocalStorage API.
 
 ## 🔗 Live Demo
-[View Live App]([https://lg49ls-3000.csb.app/](https://lg49ls-3000.csb.app/))
+[View Live App](https://lg49ls-3000.csb.app/)
 
 ## 🛠 Tech Stack
 - JavaScript (ES6+)
